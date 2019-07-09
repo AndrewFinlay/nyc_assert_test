@@ -1,0 +1,14 @@
+{
+  "name": "nycassert",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "lib/assert.js",
+  "scripts": {
+    "test": "npx mocha --recursive --ui bdd ./test",
+    "cover": "npx nyc mocha --recursive --ui bdd ./test"
+  },
+  "dependencies": {
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  }
+}
