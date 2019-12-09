@@ -5,10 +5,11 @@
   "main": "lib/assert.js",
   "scripts": {
     "test": "npx mocha --recursive --ui bdd ./test",
-    "cover": "npx nyc mocha --recursive --ui bdd ./test"
+    "cover": "npx nyc --no-cache --clean mocha --recursive --ui bdd ./test",
+    "cover_no_instrument": "node node_modules/nyc/bin/nyc --no-cache --no-instrument --clean mocha --recursive --ui bdd ./test"
   },
   "dependencies": {
     "mocha": "^6.1.4",
-    "nyc": "^14.1.1"
+    "nyc": "^15.0.0-beta.1"
   }
 }
