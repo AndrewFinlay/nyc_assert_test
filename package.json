@@ -9,7 +9,7 @@
     "cover_no_instrument": "node node_modules/nyc/bin/nyc --no-cache --no-instrument --clean mocha --recursive --ui bdd ./test"
   },
   "dependencies": {
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "nyc": "^15.0.0-beta.1"
   }
 }
